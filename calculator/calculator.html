@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <main>
+        <section></section>
+        <p>Please enter the first number</p>
+        <input type="number" name="numOne" id="numOne" value="0">
+        <p>Please enter the second number</p>
+        <input type="number" name="numTwo" id="numTwo" value="0">
+        <p>Please click a function button for result</p>
+        <input type="number" name="result" id="result" value="0" readonly>
+        <div>
+            <button class="calculatorButton" id="addition" onclick="add()">+</button>
+            <button class="calculatorButton" id="subtract" onclick="subtract()">-</button>
+            <button class="calculatorButton" id="multiply" onclick="multiply()">x</button>
+            <button class="calculatorButton" id="divide" onclick="divide()">/</button>
+            <button class="counterButton" id="reset" onclick="reset()">Reset</button>
+        </div>
+        </section>
+        <section id ="history">
+            <h2>
+                History
+            </h2>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
